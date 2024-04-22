@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Text-A-Lot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A Realtime Chat Application
 
-## Available Scripts
+A simple realtime chat apoplication made using [React JS](https://reactjs.org/docs/getting-started.html), a JavaScript library to make awesome UI by Facebook, [Node JS](https://nodejs.org/en/docs), [Express JS](https://expressjs.com/en/api.html) and [MongoDB](https://docs.mongodb.com/).
 
-In the project directory, you can run:
+This application uses [React JS](https://reactjs.org/docs/getting-started.html) component oriented UI creation paradigm. All components are written in [JSX](https://reactjs.org/docs/jsx-in-depth.html) and ES6 style and are
+combined to get a single build for production purpose using [Webpack 5](https://webpack.js.org/concepts/).
 
-### `npm start`
+ES6 `module` creation along with `import /export` is used. [Babel](https://babeljs.io/docs/en/babel-preset-react) is used to _transpile_ all [JSX](https://reactjs.org/docs/jsx-in-depth.html) code to vanilla JavaScript code. To install all the dependecies `npm` is used.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Back end is implemented using [Node JS](https://nodejs.org/en/docs), [Express JS](https://expressjs.com/en/api.html) and [MongoDB](https://docs.mongodb.com/). [Atlas](https://www.mongodb.com/cloud/atlas), the _Cloud_ version of [MongoDB](https://docs.mongodb.com/) is used. Real time communication is done using [Socket.io](https://www.npmjs.com/package/socket.io).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
-### `npm test`
+```
+This is still a work in progress
+If you find any bugs you can report it to me.
+Pull requests are always welcome. For major changes, 
+please open an issue first to discuss what you would like to change.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+### Few Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Homepage](/screenshots/1.png "Homepage")
+![Chatpage](/screenshots/2.png "Chatpage")
+![Groupchat](/screenshots/3.png "Groupchat")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Latest features of JavaScript i.e. ES6, ES7, ES8 is used
+- [React JS Hooks](https://reactjs.org/docs/hooks-intro.html) are used with Functional components
+- ES8 `async/await` is used
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<ul>
+ <li> This is Simple Chat Application </li>
+ <li> It is a Full Stack Application </li>
+</ul>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- All the user details, group chats and conversations are stored in the [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<ul>
+ <li>Login/Signup as well as Logout feature is added </li>
+ <li>Guest User Login added</li>
+ <li>Error will be shown if the credentials are not correct</li>
+</ul>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Real time communication & notification is supported using <a href="https://www.npmjs.com/package/socket.io">Socket.io</a>
 
-## Learn More
+<ul>
+ <li> Realtime One on One chats and group chats </li>
+ <li> Functionality and features like Search for chats, create a group, add or remove partricipants. </li>   
+ <li> typing... animation. </li>
+ <li> Online / Offline status are shown . </li>
+ <li> Read / Unread status of conversation is supported
+ <li> All the conversation are stored in the database i.e. <i>persistant</i>
+</ul>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech Stack
 
-### Code Splitting
+MongoDB, Express, React, Node, Socket.IO, Chakra-UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Hosted/Deployed
 
-### Analyzing the Bundle Size
+https://textalot.herokuapp.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Test users**
 
-### Advanced Configuration
+| Email | Password  |
+| -------- | --------- |
+| kohli@test.com | kohlitest |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+``` Or Use the guest user login feature.  ```
 
-### Deployment
+### Clone the repository:
+```
+git clone https://github.com/SiddharthSsb11/MERN-chat-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Env Variables
 
-### `npm run build` fails to minify
+Create a .env file in the root and add the following
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = <yourMongoDbUri>
+JWT_SECRET = <yourSecret>
+```
+
+### Install Dependencies (frontend & backend)
+
+```
+npm install
+cd frontend
+npm install
+```
+
+### Run
+Run frontend (:3000) & backend (:5000)
+```
+# Run frontend only
+cd frontend
+npm start 
+
+# Run backend only
+npm start
+```
+
+## Build & Deploy
+
+```
+# Create frontend production build
+cd frontend
+npm run build
+```
+
+There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
+
+
